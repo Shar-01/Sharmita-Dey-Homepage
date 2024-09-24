@@ -103,7 +103,7 @@ h2 {
 
 .project-item img {
   /*width: 100%; /* Ensures images fill the container width */
-  max-width: 100%; /* Allows the image to be as large as the container */
+  /*max-width: 100%; /* Allows the image to be as large as the container */
   height: auto;
   border-radius: 8px;
   margin-bottom: 15px;
