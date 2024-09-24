@@ -130,7 +130,7 @@ h2 {
 
 .project-image {
   /*width: 50%; /* Ensures the first two images are side by side */
-  max-width: calc(50% - 1px); /* Adjusts to keep images within boundaries */
+  /*max-width: calc(50% - 1px); /* Adjusts to keep images within boundaries */
   height: auto;
   margin-bottom: 10px;
   border-radius: 8px;
