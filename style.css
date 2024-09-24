@@ -98,6 +98,10 @@ h2 {
   padding: 15px;
   border: 1px solid #e0e0e0;
   border-radius: 8px;
+  display: block; /* Default display for regular project items */
+}
+
+.project-item.last-project {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -109,9 +113,16 @@ h2 {
 }
 
 .project-image {
-  width: 50%; /* Adjust the width so both images fit side by side */
+  width: 50%; /* Ensures the first two images are side by side */
   height: auto;
   margin-bottom: 15px;
+  border-radius: 8px;
+}
+
+.project-image-below {
+  width: 100%; /* The third image will take full width below the first two */
+  height: auto;
+  margin-top: 15px; /* Space between the first two images and the third */
   border-radius: 8px;
 }
 
@@ -130,12 +141,12 @@ footer p {
   .container {
     width: 95%;
   }
-  
+
   .project-images {
     flex-direction: column; /* Stack images vertically on smaller screens */
   }
 
   .project-image {
-    width: 100%;
+    width: 100%; /* Stack the two images on smaller screens */
   }
 }
