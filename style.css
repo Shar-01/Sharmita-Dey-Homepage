@@ -103,8 +103,13 @@ h2 {
   align-items: center;
 }
 
+.project-images {
+  display: flex;
+  gap: 0; /* No space between images */
+}
+
 .project-image {
-  width: 100%;
+  width: 50%; /* Adjust the width so both images fit side by side */
   height: auto;
   margin-bottom: 15px;
   border-radius: 8px;
@@ -124,5 +129,13 @@ footer p {
 @media (max-width: 768px) {
   .container {
     width: 95%;
+  }
+  
+  .project-images {
+    flex-direction: column; /* Stack images vertically on smaller screens */
+  }
+
+  .project-image {
+    width: 100%;
   }
 }
