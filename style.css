@@ -98,19 +98,16 @@ h2 {
   padding: 15px;
   border: 1px solid #e0e0e0;
   border-radius: 8px;
-  display: flex;
-  flex-direction: column;
-  align-items: center; /* Centers the content inside each project item */
-  text-align: center; /* Centers text content */
+  text-align: center; /* Centers the text and image within the card */
 }
 
 .project-item img {
-  width: 100%; /* Ensures images fill the container */
-  max-width: 280px; /* Limits the maximum width of the image */
+  width: 100%; /* Ensures images fill the container width */
+  max-width: 100%; /* Allows the image to be as large as the container */
   height: auto;
   border-radius: 8px;
   margin-bottom: 15px;
-  object-fit: cover; /* Ensures images maintain aspect ratio while filling the box */
+  object-fit: cover; /* Ensures images maintain aspect ratio while filling the container */
 }
 
 .project-item.last-project {
