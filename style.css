@@ -101,6 +101,14 @@ h2 {
   display: block; /* Default display for regular project items */
 }
 
+.project-item img {
+  width: 100%; /* Ensures images fill the box */
+  height: auto;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  object-fit: cover; /* Ensures images maintain aspect ratio while filling the box */
+}
+
 .project-item.last-project {
   display: flex;
   flex-direction: column;
@@ -115,15 +123,17 @@ h2 {
 .project-image {
   width: 50%; /* Ensures the first two images are side by side */
   height: auto;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   border-radius: 8px;
+  object-fit: cover; /* Keeps the aspect ratio while filling the space */
 }
 
 .project-image-below {
-  width: 100%; /* The third image will take full width below the first two */
+  width: 95%; /* Make the third image slightly smaller to fit within the card */
   height: auto;
-  margin-top: 15px; /* Space between the first two images and the third */
+  margin: 10px auto 0; /* Centers the image and provides a small gap */
   border-radius: 8px;
+  object-fit: cover; /* Keeps the aspect ratio while filling the space */
 }
 
 footer {
@@ -148,5 +158,9 @@ footer p {
 
   .project-image {
     width: 100%; /* Stack the two images on smaller screens */
+  }
+
+  .project-image-below {
+    width: 100%; /* Make the third image full width when stacked */
   }
 }
