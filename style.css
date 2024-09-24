@@ -102,7 +102,7 @@ h2 {
 }
 
 .project-item img {
-  width: 100%; /* Ensures images fill the container width */
+  /*width: 100%; /* Ensures images fill the container width */
   max-width: 100%; /* Allows the image to be as large as the container */
   height: auto;
   border-radius: 8px;
@@ -129,7 +129,7 @@ h2 {
 }
 
 .project-image {
-  width: 50%; /* Ensures the first two images are side by side */
+  /*width: 50%; /* Ensures the first two images are side by side */
   max-width: calc(50% - 1px); /* Adjusts to keep images within boundaries */
   height: auto;
   margin-bottom: 10px;
